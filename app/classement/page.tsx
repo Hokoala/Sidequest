@@ -218,6 +218,26 @@ export default function ClassementPage() {
           display: flex; justify-content: center; padding: 60px;
           color: rgba(255,255,255,0.2); font-size: 14px;
         }
+
+        @media (max-width: 640px) {
+          .cl-page { padding: 72px 14px 48px; }
+          .cl-sub { margin-bottom: 32px; }
+          .cl-my-card { flex-wrap: wrap; gap: 12px; padding: 18px; }
+          .cl-my-sep { display: none; }
+          .cl-my-rank { font-size: 32px; width: auto; }
+          .cl-my-pct { font-size: 28px; }
+          .cl-podium { gap: 8px; padding: 0 8px; }
+          .podium-name { font-size: 11px; max-width: 80px; }
+          .podium-pct { font-size: 16px; }
+          .podium-bar-1 { height: 72px; }
+          .podium-bar-2 { height: 52px; }
+          .podium-bar-3 { height: 36px; }
+          .cl-table-header { grid-template-columns: 36px 1fr 60px; }
+          .cl-table-header span:last-child { display: none; }
+          .cl-row { grid-template-columns: 36px 1fr 60px; }
+          .cl-habits { display: none; }
+          .cl-pct-val { font-size: 14px; }
+        }
       `}</style>
 
       <Header />

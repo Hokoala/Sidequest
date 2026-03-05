@@ -230,6 +230,23 @@ export default function PourquoiPage() {
           font-size: 13px;
           color: rgba(255,255,255,0.35);
         }
+
+        @media (max-width: 900px) {
+          .bento-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 18rem; }
+          .bento-span-2 { grid-column: span 2; }
+        }
+
+        @media (max-width: 640px) {
+          .pq-hero { padding: 80px 16px 60px; }
+          .pq-desc { font-size: 16px; }
+          .pq-section { padding: 48px 16px; }
+          .pq-section-title { margin-bottom: 32px; }
+          .bento-grid { grid-template-columns: 1fr; grid-auto-rows: 16rem; }
+          .bento-span-1, .bento-span-2 { grid-column: span 1; }
+          .pq-stats { grid-template-columns: 1fr; gap: 0; padding: 48px 16px; }
+          .stat { padding: 24px 16px; }
+          .stat-num { font-size: 40px; }
+        }
       `}</style>
 
       <Header />

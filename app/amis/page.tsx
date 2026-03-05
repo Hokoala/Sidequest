@@ -227,6 +227,15 @@ export default function AmisPage() {
           text-align: center; padding: 80px 24px;
           color: rgba(255,255,255,0.3); font-size: 14px;
         }
+
+        @media (max-width: 640px) {
+          .amis-page { padding: 72px 14px 48px; }
+          .amis-sub { margin-bottom: 32px; }
+          .amis-grid { grid-template-columns: 1fr; gap: 12px; margin-bottom: 32px; }
+          .amis-card { padding: 20px; }
+          .friend-bar-wrap { width: 64px; }
+          .friend-row { padding: 12px 14px; gap: 12px; }
+        }
       `}</style>
 
       <Header />

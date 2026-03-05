@@ -136,6 +136,86 @@ export default function HabitTracker() {
           overflow: hidden;
         }
 
+        /* ── Mobile responsive ── */
+        @media (max-width: 900px) {
+          .bento {
+            grid-template-columns: 1fr 1fr;
+          }
+          .bento-top {
+            grid-column: 1 / -1;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .ht-page {
+            padding: 68px 12px 32px;
+          }
+          .bento {
+            grid-template-columns: 1fr;
+            gap: 12px;
+          }
+          .bento-top {
+            grid-column: 1;
+          }
+          .bento-cell {
+            border-radius: 18px;
+            padding: 20px;
+          }
+          .chart-title {
+            font-size: 16px;
+          }
+          .chart-sub {
+            font-size: 12px;
+          }
+          .chart-header {
+            flex-wrap: wrap;
+            gap: 12px;
+          }
+          .chart-bars {
+            height: 110px;
+          }
+          .ring-wrap {
+            width: 56px;
+            height: 56px;
+          }
+          .ring-svg {
+            width: 56px;
+            height: 56px;
+          }
+          .ring-label {
+            font-size: 13px;
+          }
+          .habits-list {
+            max-height: none;
+          }
+          .habit-row {
+            padding: 12px 14px;
+          }
+          .habit-name {
+            font-size: 14px;
+          }
+          .add-title {
+            font-size: 17px;
+          }
+          .emoji-grid {
+            grid-template-columns: repeat(5, 1fr);
+            gap: 6px;
+          }
+          .emoji-btn {
+            font-size: 18px;
+          }
+          .add-stat-val {
+            font-size: 22px;
+          }
+          .month-title {
+            font-size: 17px;
+          }
+          .month-day {
+            font-size: 10px;
+            border-radius: 6px;
+          }
+        }
+
         .cell-label {
           font-size: 10px;
           font-weight: 600;
